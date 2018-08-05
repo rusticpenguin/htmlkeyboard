@@ -1,6 +1,6 @@
 # HTML Keyboard
 
-A music keyboard designed in vanilla Javascript. With all the *(soon to be implimented)* functionality needed to impliment into your project!
+A music keyboard designed in vanilla Javascript. With all the *(soon to be implimented)* functionality needed to impliment it into your project!
 
 #### Features!
 
@@ -10,6 +10,6 @@ A music keyboard designed in vanilla Javascript. With all the *(soon to be impli
 
 #### Todos
 
-  - Black keys
   - Herts per note
   - Returning note value onClick
+  - Make black keys lay on top of white keys
