@@ -1,0 +1,12 @@
+#keyboard {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: black;
+}
+
+.key {
+    height: 21vw;
+    width: 7vw;
+    background-color:white;
+    border: 1px solid black;
+}
