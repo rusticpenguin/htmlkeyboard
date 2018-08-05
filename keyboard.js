@@ -28,11 +28,12 @@ function assignKeyNotes(){
         if (!(i === 0) && (i % 12 === 0)){
             notes.offset += 12;
         }
-        keys[i].classList.add(notes.noteLetters[i - notes.offset] + (octave + (notes.offset/7)));
-        keys[i].classList.add(notes.noteColors[i - notes.offset])
+        keys[i].classList.add(notes.noteLetters[i - notes.offset] + (octave + (notes.offset/12)));
+        keys[i].classList.add(notes.noteColors[i - notes.offset]);
     };
 }
 
 function keyPressed(target){
-    console.log("hi" + target);
+    notePressed = target.path[0].classList[1];
+    console.log(notePressed);
 }
