@@ -1,4 +1,5 @@
 const keyboardSize = 12;
+const octave = 3;
 
 (function createKeyboard(){
     const keyboard = document.querySelector("#keyboard");
@@ -21,12 +22,13 @@ function assignKeyNotes(){
         noteLetters: ["a", "b", "c", "d", "e", "f", "g"],
         offset: 0
     };
+    
     const keys = document.querySelectorAll(".key");
     for(i = 0; i < keyboardSize; i++){
         if (!(i === 0) && (i % 6 === 0)){
             notes.offset += 6;
         }
-        keys[i].classList.add(notes.noteLetters[i - notes.offset]);
+        keys[i].classList.add(notes.noteLetters[i - notes.offset] + (octave + (notes.offset/6)));
     }
 }
 
