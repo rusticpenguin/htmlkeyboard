@@ -1,7 +1,7 @@
 #keyboard {
     display: flex;
     flex-flow: row wrap;
-    background-color: black;
+    background-color: #383838;
 }
 
 .key {
@@ -9,4 +9,12 @@
     width: 7vw;
     background-color:white;
     border: 1px solid black;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 5px 7px #dddddd;
+}
+
+.key:active {
+    background-color:#dddddd;
+    border-color: grey;
 }
