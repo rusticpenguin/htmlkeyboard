@@ -22,16 +22,15 @@ function assignKeyNotes(){
         noteLetters: ["a", "b", "c", "d", "e", "f", "g"],
         offset: 0
     };
-    
     const keys = document.querySelectorAll(".key");
     for(i = 0; i < keyboardSize; i++){
-        if (!(i === 0) && (i % 6 === 0)){
-            notes.offset += 6;
+        if (!(i === 0) && (i % 7 === 0)){
+            notes.offset += 7;
         }
-        keys[i].classList.add(notes.noteLetters[i - notes.offset] + (octave + (notes.offset/6)));
-    }
+        keys[i].classList.add(notes.noteLetters[i - notes.offset] + (octave + (notes.offset/7)));
+    };
 }
 
 function keyPressed(target){
-    console.log("hi" + target)
+    console.log("hi" + target);
 }
