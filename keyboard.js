@@ -2,13 +2,19 @@ const keyboardSize = 12;
 
 (function createKeyboard(){
     const keyboard = document.querySelector("#keyboard");
+    generateKeys();
+    assignKeyNotes();
+})()
+
+function generateKeys(){
     for(i = 0; i < keyboardSize; i++){
         const key = document.createElement("div");
         key.classList.add("key");
+        key.addEventListener("click", keyPressed, false);
         keyboard.appendChild(key);
     };
-    assignKeyNotes();
-})()
+
+}
 
 function assignKeyNotes(){
     const notes = {
@@ -22,4 +28,8 @@ function assignKeyNotes(){
         }
         keys[i].classList.add(notes.noteLetters[i - notes.offset]);
     }
+}
+
+function keyPressed(target){
+    console.log("hi" + target)
 }
