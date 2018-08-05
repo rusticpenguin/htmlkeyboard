@@ -1,3 +1,10 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 18px;
+}
+
 #keyboard {
     display: flex;
     flex-flow: row wrap;
