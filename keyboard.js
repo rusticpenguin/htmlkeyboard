@@ -1,4 +1,4 @@
-const keyboardSize = 12;
+const keyboardSize = 15;
 const octave = 3;
 
 (function createKeyboard(){
@@ -19,15 +19,17 @@ function generateKeys(){
 
 function assignKeyNotes(){
     const notes = {
-        noteLetters: ["a", "b", "c", "d", "e", "f", "g"],
+        noteLetters: ["a", "a#", "b", "c", "c#", "d", "d#", "e", "f", "f#", "g", "g#"],
+        noteColors: ["white", "black", "white", "white", "black", "white", "black", "white", "white", "black", "white", "black"],
         offset: 0
     };
     const keys = document.querySelectorAll(".key");
     for(i = 0; i < keyboardSize; i++){
-        if (!(i === 0) && (i % 7 === 0)){
-            notes.offset += 7;
+        if (!(i === 0) && (i % 12 === 0)){
+            notes.offset += 12;
         }
         keys[i].classList.add(notes.noteLetters[i - notes.offset] + (octave + (notes.offset/7)));
+        keys[i].classList.add(notes.noteColors[i - notes.offset])
     };
 }
 
