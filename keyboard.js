@@ -19,7 +19,7 @@ function generateKeys(){
 
 function assignKeyNotes(){
     const notes = {
-        noteLetters: ["a", "a#", "b", "c", "c#", "d", "d#", "e", "f", "f#", "g", "g#"],
+        noteLetters: ["a", "aSharp", "b", "c", "cSharp", "d", "dSharp", "e", "f", "fSharp", "g", "gSharp"],
         noteColors: ["white", "black", "white", "white", "black", "white", "black", "white", "white", "black", "white", "black"],
         offset: 0
     };
@@ -35,5 +35,14 @@ function assignKeyNotes(){
 
 function keyPressed(target){
     notePressed = target.path[0].classList[1];
-    console.log(notePressed);
+    getHertz(notePressed);
+    console.log(hertz);
+}
+
+function getHertz(note){
+    return hertz = hertzMath(note);
+}
+
+function hertzMath(note){
+    return note;
 }
