@@ -11,3 +11,6 @@ A music keyboard designed in vanilla Javascript. With all the functionality need
 #### Todos
 
   - Herts per note
+
+
+Live demo [here](https://rusticpenguin.github.io/htmlkeyboard/)
