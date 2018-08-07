@@ -12,5 +12,6 @@ A music keyboard designed in vanilla Javascript. With all the functionality need
 
   - Herts per note
 
+![image](https://user-images.githubusercontent.com/38636581/43797779-c908ad48-9a45-11e8-83e0-d7488cd41d3e.png)
 
 Live demo [here](https://rusticpenguin.github.io/htmlkeyboard/)
